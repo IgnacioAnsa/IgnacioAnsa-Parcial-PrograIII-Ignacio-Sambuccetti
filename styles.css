@@ -1,0 +1,138 @@
+
+:root {
+    --color-primario: #483D8B;;
+    --color-gris-oscuro: #dddddd;
+    --color-gris-claro: #fbfbfb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292929;
+    background-color: white;
+}
+
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+main {
+    margin: 20px 34px 0 34px;
+}
+
+h1 {
+    font-size: 29px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-gris-oscuro);
+    margin: 10px 0;
+}
+
+.filtrar-usuarios {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 12px 0;
+}
+
+.gestionar-usuarios {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-bottom: 22px;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid var(--color-primario);
+    background-color: white;
+    color: var(--color-primario);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.buscador {
+    display: block;
+    margin-left: auto;
+    width: 38%;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid var(--color-gris-oscuro);
+    background-color: white;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.buscador::placeholder {
+    color: #888888;
+}
+
+.create {
+    border-color: var(--color-primario);
+    color: var(--color-primario);
+}
+
+#users-container {
+    width: 100%;
+    min-height: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid var(--color-gris-oscuro);
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-gris-claro);
+}
+
+td a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid var(--color-gris-oscuro);
+}
+
+
+
+@media (max-width: 700px) {
+    main {
+        margin: 20px 15px;
+    }
+
+    .gestionar-usuarios {
+        flex-wrap: wrap;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+}

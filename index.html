@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Users</h1>
+    </header>
+
+    <main>
+        <hr>
+
+        <section class="filtrar-usuarios">
+            <label>
+                <input type="radio" name="status" checked>
+                Active
+            </label>
+
+            <label>
+                <input type="radio" name="status">
+                Inactive
+            </label>
+
+            <label>
+                <input type="radio" name="status">
+                All
+            </label>
+        </section>
+
+        <div class="gestionar-usuarios">
+            <button class="create">CREATE</button>
+            <button>DEACTIVATE</button>
+            <button>RESET PASSWORD</button>
+        </div>
+
+        <input class="buscador" type="text" placeholder="Search Users">
+
+        <div id="users-container"></div>
+    </main>
+
+    <footer>
+        <p>Ignacio Sambuccetti</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
